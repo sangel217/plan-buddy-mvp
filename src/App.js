@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import Home from './components/Home';
+import ClinicList from './components/ClinicList';
+import ReferenceList from './components/ReferenceList';
+import About from './components/About';
+import Admin from './components/Admin';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
+import { directive } from '@babel/types';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/clinics' component={ClinicList} />
+        <Route path='/references' compnent={ReferenceList} />
+        <Route path='/about' component={About} />
+        <Route path='/admin' component={Admin} />
+      </Switch>
     </div>
   );
 }

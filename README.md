@@ -6,7 +6,7 @@
 
 ## Project Component Tree with Stateful Components
 
-[project component tree](https://docs.google.com/document/d/1oWuAKtCYlH7iAhmHam8wMBddRIRLh-o9DhSM78E4mE8/edit?usp=sharing)
+[project component tree](src/capstone-project-tree.jpg)
 
 ## Setup/Install
 - npm install

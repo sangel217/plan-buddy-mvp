@@ -2,11 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { ApptContainer } from 'react-hot-loader';
+import { HashRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const render = (Component) => {
+    ReactDOM.render(
+    <ApptContainer>
+        <HashRouter>
+            <Component/>
+        </HashRouter>
+    </ApptContainer>, 
+    document.getElementById('root'));
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+render(App);
+/*eslint-disable */
+if (module.hot){
+    module.hot.accept('./compnents/App', () =>{
+    render(App)
+    })
+}
+/*eslint-disable */
+
 serviceWorker.unregister();
