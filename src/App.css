@@ -66,7 +66,7 @@ header.masthead {
     -o-background-size: cover;
     background-size: cover;
     padding-top: 0px;
-    padding-bottom: 0rem;
+    padding-bottom: 0px;
 }
 
 header.masthead .overlay{position:absolute;background-color:#212529;height:300%;width:300%;top:0;left:0;opacity:.3}
@@ -115,9 +115,7 @@ a.btn.btn-default.btn-scroll {
     border-radius: 100%;
 }
 
-#container {
-	padding-bottom: 200px;
-}
+
 
 
 
@@ -170,7 +168,7 @@ p.myp-slider.text-center {
 
 
 .btn-register:hover{
-       background: grey !important;
+    background: grey !important;
     border: 1px solid #1fc6d8 !important;
 }
 
@@ -483,7 +481,7 @@ transform: scale(1.4);
 }
 a.openNav {
     font-size: 26px;
-    color: #E4A6BDfff;
+    color: #fff;
     text-decoration: none;
 }
 .sidenav .nav-link {
@@ -508,7 +506,7 @@ a.openNav {
 
 li.nav-item a:hover {
     background: #008ba3;
-    color: #E4A6BDfff !important;
+    color: #fff !important;
 }
 
 
@@ -720,3 +718,6 @@ p.myp-font {
 	.header-wrap .sub-menu {width: 250px;}
 	.box img {height: 100%;}
 }
+
+/* home */
+

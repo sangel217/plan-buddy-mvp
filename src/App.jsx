@@ -14,11 +14,13 @@ function App() {
     <div>
       <Router>
         <NavBar/>
+        <header className='masthead'>
         <Route exact path='/' component={Home} />
         <Route path='/clinics' component={ClinicList} />
         <Route path='/references' compnent={ReferenceList} />
         <Route path='/about' component={About} />
         <Route path='/admin' component={Admin} />
+        </header>
         <Footer />
       </Router>
     </div>

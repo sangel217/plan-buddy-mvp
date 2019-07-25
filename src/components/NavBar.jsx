@@ -22,7 +22,7 @@ function NavBar(){
                     <Link to="/references" className="btn btn-primary btn-block btn-register">References</Link>
                     </li>
                     <li className="nav-link">
-                    <Link to="/about" id="btn1" className="btn btn-primary btn-block btn-login">About</Link>
+                    <Link to="/about" id="btn1" className="btn btn-primary btn-block btn-register">About</Link>
                     </li>
                 </ul>
                 </div>
