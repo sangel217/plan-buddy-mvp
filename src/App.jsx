@@ -17,7 +17,7 @@ function App() {
         <header className='masthead'>
         <Route exact path='/' component={Home} />
         <Route path='/clinics' component={ClinicList} />
-        <Route path='/references' compnent={ReferenceList} />
+        <Route path='/references' component={ReferenceList} />
         <Route path='/about' component={About} />
         <Route path='/admin' component={Admin} />
         </header>
