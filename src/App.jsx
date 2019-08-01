@@ -1,11 +1,11 @@
 import React from 'react';
-import Home from './components/Home';
-import ClinicList from './components/ClinicList';
-import ReferenceList from './components/ReferenceList';
-import NavBar from './components/NavBar';
-import About from './components/About';
-import Admin from './components/Admin';
-import Footer from './components/Footer';
+import Home from './components/Home/Home';
+import ClinicList from './components/Clinic/ClinicList';
+import ReferenceList from './components/Reference/ReferenceList';
+import NavBar from './components/NavBar/NavBar';
+import About from './components/About/About';
+import Admin from './components/Admin/Admin';
+import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
